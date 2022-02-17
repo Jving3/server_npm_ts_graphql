@@ -1,16 +1,16 @@
 import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
-export class Usuario extends BaseEntity {
+export class Autostore extends BaseEntity {
   @PrimaryGeneratedColumn()
   id!: number;
 
   @Column()
-  nombre!: string;
+  DateTime!: string;
 
   @Column()
-  correo!: string;
+  Type!: string;
 
   @Column()
-  pin!: number;
+  Message!: string;
 }
